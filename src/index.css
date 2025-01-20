@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity, 1));
+}
+.glassbg {
+  backdrop-filter: blur(3px) saturate(167%);
+  -webkit-backdrop-filter: blur(3px) saturate(167%);
+}
+
+.slick-slide > div {
+  margin: 0px 15px;
+}
+
+.glassbg2 {
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
