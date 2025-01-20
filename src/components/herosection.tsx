@@ -4,6 +4,7 @@ import "./hero.css";
 
 const Hero_section = () => {
   const { dataAll } = useGames({ category: "All" });
+  if (!dataAll) return;
   return (
     <>
       <Header_section />
@@ -17,43 +18,43 @@ const Hero_section = () => {
             className='item'
             style={{ "--position": 1 } as React.CSSProperties}
           >
-            <img src='/src/assets/img_1.avif' alt='' />
+            <img src={dataAll[0].img} alt={dataAll[0].title} />
           </div>
           <div
             className='item'
             style={{ "--position": 2 } as React.CSSProperties}
           >
-            <img src='/src/assets/img_2.avif' alt='' />
+            <img src={dataAll[1].img} alt={dataAll[1].title} />
           </div>
           <div
             className='item'
             style={{ "--position": 3 } as React.CSSProperties}
           >
-            <img src='/src/assets/img_3.webp' alt='' />
+            <img src={dataAll[2].img} alt={dataAll[2].title} />
           </div>
           <div
             className='item'
             style={{ "--position": 4 } as React.CSSProperties}
           >
-            <img src='/src/assets/img_4.webp' alt='' />
+            <img src={dataAll[3].img} alt={dataAll[3].title} />
           </div>
           <div
             className='item'
             style={{ "--position": 5 } as React.CSSProperties}
           >
-            <img src='/src/assets/img_5.webp' alt='' />
+            <img src={dataAll[6].img} alt={dataAll[6].title} />
           </div>
           <div
             className='item'
             style={{ "--position": 6 } as React.CSSProperties}
           >
-            <img src='/src/assets/img_6.avif' alt='' />
+            <img src={dataAll[10].img} alt={dataAll[10].title} />
           </div>
           <div
             className='item'
             style={{ "--position": 7 } as React.CSSProperties}
           >
-            <img src='/src/assets/img_6.avif' alt='' />
+            <img src={dataAll[16].img} alt={dataAll[16].title} />
           </div>
         </div>
         <div className='content'>
