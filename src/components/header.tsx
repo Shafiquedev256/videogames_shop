@@ -17,7 +17,7 @@ const Header_section = () => {
   };
   return (
     <>
-      <header className='glassbg font-body z-50 fixed top-0 w-[100%] left-0 p-3 md:p-5 bg-gray-950 bg-opacity-20'>
+      <header className='glassbg font-body z-40 fixed top-0 w-[100%] left-0 p-3 md:p-5 bg-gray-950 bg-opacity-20'>
         <div className='w-[100%] relative  flex flex-row justify-between md:justify-evenly items-center'>
           <div className='text-gray-200 text-2xl font-bold whitespace-nowrap text-left px-2 font-title md:w-2/6'>
             S.M Games.
