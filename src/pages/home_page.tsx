@@ -3,9 +3,11 @@ import { Footer } from "../components/footerSection";
 import Hero_section from "../components/herosection";
 import img1 from "../assets/hero3.avif";
 import img2 from "../assets/hero2.avif";
+import Loading from "../components/LoadingPage";
 const Home_page = () => {
   return (
     <>
+      <Loading />
       <div className='bg-gray-950 min-h-[100vh] w-[100%] overflow-hidden'>
         <Hero_section />
         <Catgory_desplay category='Race' />
